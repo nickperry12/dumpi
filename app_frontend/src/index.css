@@ -36,6 +36,13 @@ body {
   border-radius: 30px;
 }
 
+.copybtn:hover {
+  color: white;
+  background-color: rgb(64, 108, 150);
+  border: solid 2px rgb(64, 108, 150);
+  border-radius: 30px;
+}
+
 #new-bin-btn {
   font-family: monospace;
   background-color: white;

@@ -42,7 +42,7 @@ export function RequestBinView() {
   useEffect(() => {
     getHistory()
 
-    const socket = io('https://drumsofliberation.ca:3000');
+    const socket = io('https://drumsofliberation.ca');
     socket.on('newRequest', (req) => {
       if (req.endpoint_val === binId) {
         setRequests((prevRequests) => [req, ...prevRequests]);

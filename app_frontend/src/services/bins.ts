@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = 'https://www.drumsofliberation.ca/api'
+const baseUrl = 'https://drumsofliberation.ca/api'
 
 const getRequestHistory = async (bin_id: string) => { // for a specific user
   const response = await axios.get(`${baseUrl}/history/${bin_id}`)

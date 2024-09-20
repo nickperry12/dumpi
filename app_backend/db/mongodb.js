@@ -15,7 +15,7 @@ mongoose.connection.on('disconnected', () => {
   console.log('Mongoose disconnected from MongoDB');
 })
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect('mongodb://127.0.0.1:27017/request_bin')
   .then(() => {
     console.log('Successfully connected to MongoDB!');
   }).catch((error) => {
